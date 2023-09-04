@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap");
+
+html,
+body {
+  background-color: antiquewhite;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  font-family: "Varela Round", "sans-serif";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "ubuntu", "sans-serif";
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  background-color: black;
+  height: 65px;
+  color: white;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+nav > ul > li:hover {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  padding-right: 35px;
+}
+
+.brand img {
+  width: 46px;
+  padding-right: 5px;
+}
+
+.container {
+  min-height: 64.5vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 65%;
+  margin: 1rem auto;
+  padding: 10px 15px;
+  border-radius: 12px;
+  background-image: url("bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container h1 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.bottom {
+  position: sticky;
+  height: 95px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons i {
+  /* padding: 15px 20px; */
+  padding: 20px 15px 8px 15px;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: lightgrey;
+}
+
+#myProgressBar {
+  min-width: 80vw;
+  cursor: pointer;
+  height: 3px;
+}
+
+#myProgressBar:hover {
+  cursor: grab;
+}
+
+.songItem {
+  height: 22px;
+  width: 100%;
+  font-family: "Varela Round", "sans-serif";
+  /* background-color: rgba(113, 115, 113, 0.364); */
+  background-color: antiquewhite;
+  color: black;
+  border-radius: 15px;
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 2px;
+  font-size: 8.5px;
+}
+
+.songItem:hover {
+  opacity: 1;
+}
+
+.songItem img {
+  width: 20px;
+  border-radius: 15px;
+}
+
+.songItem i {
+  padding: 0 10px;
+}
+
+.timestamp i {
+  cursor: pointer;
+}
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.songInfo span {
+  padding-left: 8px;
+  font-size: 12px;
+}
